@@ -1,89 +1,106 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <link rel="stylesheet" href="https://use.typekit.net/goe1fni.css">
-    <style>
-      /*
-      font-family: urw-din, sans-serif;
-      font-weight: 600;
-      font-style: normal;
-      */
-      
-      html {
-        font-family: 'open-sans', sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 16px;
-      }
 
-      h1, h2, h3, h4, h5, h6 {
-        font-family: 'ff-scala-sans-pro', sans-serif;
-        font-weight: 700;
-        font-style: normal;
-      }
-      
-      h1 {
-        font-size: 3rem;
-        line-height: 4rem;
-        letter-spacing: -0.024rem;
-      }
-      
-      h2 {
-        font-size: 2rem;
-      }
-      
-      h3 {
-        font-size: 1.5rem;
-      }
-      
-      h4 {
-        font-size: 1rem;
-      }
-      
-      h5 {
-        font-size: 0.75rem;
-      }
-      
-      h6 {
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-      a {
-        font-size: 16px;
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <div>
-      <p>1 rem = 16px</p>
-      <p>2 rem = 32px</p>
-      <p>3 rem = 48px</p>
-      <p>4 rem = 64px</p>
+  <link rel="stylesheet" href="https://use.typekit.net/goe1fni.css">
+  <link rel="stylesheet" href="designSystem.css">
+  <link rel="stylesheet" href="pageDisplay.css">
+</head>
 
-      <p>
-        Body font is Open Sans.
-      </p>
-      <p>Header font is Scala Sans Pro Bold (font weight 700).</p>
-    </div>
-    <div class="headers">
+<body>
+  <h1>Design System</h1>
+  <div>
+    <h2>Basic Text</h2>
+
+    <h3>Body Text</h3>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h3>Links</h3>
+
+    <p><a href="#">Example Link</a></p>
+    <p><a href="#" class="hover">Example Link - Hover State</a></p>
+    <p><a href="#" class="active">Example Link - Active State</a></p>
+    <p><a href="#" class="visited">Example Link - Visited State</a></p>
+
+  </div>
+
+  <div class="headers">
+    <div style="">
       <h1>Header Level 1</h1>
-      <p>
-        Font Size: 48px / 3rem<br>
-        Line Height: 64px / 4rem<br>
-        Letter Spacing: -0.024rem
-      </p>
-      <h2>Header Level 2 - 2rem / 32px</h2>
-      <h3>Header Level 3 - 1.5rem / 24px</h3>
-      <h4>Header Level 4 - 1rem / 16px</h4>
-      <h5>Header Level 5 - 0.75rem / 12px</h5>
-      <h6>Header Level 6</h6>
     </div>
-    <div class="breadcrumb">
-      <a href="#">Home</a> > Alerts & Advisories
+    <div>
+      <2>Header Level 2</h2>
     </div>
-  </body>
+    <div>
+      <h3>Header Level 3</h3>
+    </div>
+    <div>
+      <h4>Header Level 4</h4>
+    </div>
+    <div>
+      <span class="subtitle_1">Subtitle 1</span>
+    </div>
+    <div>
+      <span class="subtitle_2">Subtitle 2</span>
+    </div>
+  </div>
+  <div>
+    <h2>Navigation Buttons</h2>
+    <p>These will expand horizontally to fit their parent container.</p>
+
+    <h3>Example - 100% Width</h3>
+    <div class="nav-buttons" width="100%">
+      <div class="nav-buttons__button nav-buttons__button--selected">
+        <div>
+          <img src="img/Service_Rail.svg" alt="rail icon">
+        </div>
+        <div class="nav-buttons__button-text">
+          Rail
+        </div>
+      </div>
+      <div class="nav-buttons__button">
+        <div>
+          <img src="img/Service_Bus.svg" alt="bus icon">
+        </div>
+        <div class="nav-buttons__button-text">
+          Bus
+        </div>
+      </div>
+      <div class="nav-buttons__button">
+        <div>
+          <img src="img/Service_Accessibility.svg" alt="accessibility icon">
+        </div>
+        <div class="nav-buttons__button-text">
+          Accessibility
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2>Navigation Tabs</h2>
+    <p>These are only as wide as the text inside.</p>
+
+    <h3>Example</h3>
+    <div class="nav-tabs">
+      <div class="nav-tabs__button nav-tabs__button--selected">
+        <div class="nav-tabs__button-text">All</div>
+      </div>
+      <div class="nav-tabs__button">
+        <div class="nav-tabs__button-text">Ongoing</div>
+      </div>
+      <div class="nav-tabs__button">
+        <div class="nav-tabs__button-text">Upcoming</div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
