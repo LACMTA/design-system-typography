@@ -1,3 +1,7 @@
+body {
+    padding: 1rem 3rem;
+}
+
 .headers div {
     background-color: #F5F7F8;
     margin-bottom: 2rem;
